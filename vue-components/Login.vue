@@ -104,7 +104,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .login
     width 100%;
     height 100%;

@@ -12070,7 +12070,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: null,
+            _scopeId: "data-v-7dd764",
             functional: undefined
           };
         })());
@@ -12086,6 +12086,451 @@ render._withStripped = true
             api.createRecord('$7dd764', $7dd764);
           } else {
             api.reload('$7dd764', $7dd764);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"./..\\images\\forms\\bg.png":[["bg.4639557a.png","images/forms/bg.png"],"images/forms/bg.png"],"./..\\images\\forms\\nickname.png":[["nickname.73398389.png","images/forms/nickname.png"],"images/forms/nickname.png"],"./..\\images\\forms\\name.png":[["name.45d321e4.png","images/forms/name.png"],"images/forms/name.png"],"./..\\images\\forms\\password.png":[["password.eff0a20c.png","images/forms/password.png"],"images/forms/password.png"],"./..\\images\\forms\\email.png":[["email.318cd9ff.png","images/forms/email.png"],"images/forms/email.png"],"_css_loader":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/Signup.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  data: function data() {
+    return {
+      nickname: "",
+      password: "",
+      nickname_ok: false,
+      help_nickname: false,
+      nickname_help_x: 0,
+      nickname_help_y: 0,
+      nickname_help_text: "The number of characters must be greater than 3!",
+      password_ok: false,
+      help_password: false,
+      password_help_x: 0,
+      password_help_y: 0,
+      password_help_text: "The number of characters must be greater than 3!",
+      confirm_password_ok: false,
+      help_confirm_password: false,
+      confirm_password_help_x: 0,
+      confirm_password_help_y: 0,
+      confirm_password_help_text: "The number of characters must be greater than 3!",
+      email_ok: false,
+      help_email: false,
+      email_help_x: 0,
+      email_help_y: 0,
+      email_help_text: "The number of characters must be greater than 3!",
+      all_right: false
+    };
+  },
+  methods: {
+    check_all: function check_all() {
+      this.check_nickname();
+      this.check_password();
+      this.check_confirm_password();
+      this.check_email();
+      this.all_right = this.nickname_ok && this.password_ok && this.confirm_password_ok && this.email_ok;
+    },
+    check_nickname: function check_nickname() {
+      if (this.nickname.length < 3) {
+        this.nickname_ok = false;
+        this.nickname_help_text = "The number of characters must be greater than 3!";
+        return false;
+      } else {
+        this.nickname_help_text = "OK";
+        this.nickname_ok = true;
+        return true;
+      }
+    },
+    check_password: function check_password() {
+      if (this.password.length < 3) {
+        this.password_ok = false;
+        this.password_help_text = "The number of characters must be greater than 3!";
+        return false;
+      } else {
+        this.password_ok = true;
+        this.password_help_text = "OK";
+        return true;
+      }
+    },
+    check_confirm_password: function check_confirm_password() {
+      console.log(this.confirm_password, this.password);
+
+      if (this.confirm_password != this.password) {
+        this.confirm_password_ok = false;
+        this.confirm_password_help_text = "Password does not match!";
+        return false;
+      } else if (this.confirm_password.length < 3) {
+        this.confirm_password_ok = false;
+        this.confirm_password_help_text = "The number of characters must be greater than 3!";
+        return false;
+      } else {
+        this.confirm_password_ok = true;
+        this.confirm_password_help_text = "OK";
+        return true;
+      }
+    },
+    check_email: function check_email() {
+      if (this.email.length < 3) {
+        this.email_ok = false;
+        this.email_help_text = "The number of characters must be greater than 3!";
+        return false;
+      } else if (!this.validEmail(this.email)) {
+        this.email_ok = false;
+        this.email_help_text = "Wrotten email is not correct!";
+        return false;
+      } else {
+        this.email_ok = true;
+        this.email_help_text = "OK";
+        return true;
+      }
+    },
+    nickname_show_help: function nickname_show_help(e) {
+      this.nickname_help_x = e.target.offsetLeft + 15 + "px";
+      this.nickname_help_y = e.target.offsetTop + 15 + "px";
+      this.help_nickname = true;
+    },
+    nickname_hide_help: function nickname_hide_help(e) {
+      this.help_nickname = false;
+    },
+    password_show_help: function password_show_help(e) {
+      this.password_help_x = e.target.offsetLeft + 15 + "px";
+      this.password_help_y = e.target.offsetTop + 15 + "px";
+      this.help_password = true;
+    },
+    password_hide_help: function password_hide_help(e) {
+      this.help_password = false;
+    },
+    confirm_password_show_help: function confirm_password_show_help(e) {
+      this.confirm_password_help_x = e.target.offsetLeft + 15 + "px";
+      this.confirm_password_help_y = e.target.offsetTop + 15 + "px";
+      this.help_confirm_password = true;
+    },
+    confirm_password_hide_help: function confirm_password_hide_help(e) {
+      this.help_confirm_password = false;
+    },
+    email_show_help: function email_show_help(e) {
+      this.email_help_x = e.target.offsetLeft + 15 + "px";
+      this.email_help_y = e.target.offsetTop + 15 + "px";
+      this.help_email = true;
+    },
+    email_hide_help: function email_hide_help(e) {
+      this.help_email = false;
+    },
+    validEmail: function validEmail(email) {
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    }
+  }
+};
+exports.default = _default;
+        var $1bfc63 = exports.default || module.exports;
+      
+      if (typeof $1bfc63 === 'function') {
+        $1bfc63 = $1bfc63.options;
+      }
+    
+        /* template */
+        Object.assign($1bfc63, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "signup" }, [
+    _c("div", { staticClass: "wrapper" }, [
+      _c("form", { staticClass: "form" }, [
+        _c("h1", { staticClass: "main-title" }, [_vm._v("CREATE ACCOUNT")]),
+        _vm._v(" "),
+        _c("div", [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.nickname,
+                expression: "nickname"
+              }
+            ],
+            staticClass: "input input-nickname",
+            attrs: { type: "text", placeholder: "Nickname" },
+            domProps: { value: _vm.nickname },
+            on: {
+              input: [
+                function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.nickname = $event.target.value
+                },
+                _vm.check_all
+              ]
+            }
+          }),
+          _vm._v(" "),
+          _c("img", {
+            staticClass: "check nickname-check",
+            attrs: {
+              src: _vm.nickname_ok
+                ? "../images/forms/ok_circle.png"
+                : "../images/forms/error_circle.png",
+              alt: ""
+            },
+            on: {
+              mouseover: _vm.nickname_show_help,
+              mouseleave: _vm.nickname_hide_help
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "help help-nickname",
+              class: { active: _vm.help_nickname },
+              style: { "--x": _vm.nickname_help_x, "--y": _vm.nickname_help_y }
+            },
+            [_vm._v(_vm._s(_vm.nickname_help_text))]
+          )
+        ]),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "input input-name",
+          attrs: { type: "text", placeholder: "Your name" }
+        }),
+        _vm._v(" "),
+        _c("div", [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.password,
+                expression: "password"
+              }
+            ],
+            staticClass: "input input-password",
+            attrs: { type: "password", placeholder: "Password" },
+            domProps: { value: _vm.password },
+            on: {
+              input: [
+                function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.password = $event.target.value
+                },
+                _vm.check_all
+              ]
+            }
+          }),
+          _vm._v(" "),
+          _c("img", {
+            staticClass: "check password-check",
+            attrs: {
+              src: _vm.password_ok
+                ? "../images/forms/ok_circle.png"
+                : "../images/forms/error_circle.png",
+              alt: ""
+            },
+            on: {
+              mouseover: _vm.password_show_help,
+              mouseleave: _vm.password_hide_help
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "help help-password",
+              class: { active: _vm.help_password },
+              style: { "--x": _vm.password_help_x, "--y": _vm.password_help_y }
+            },
+            [_vm._v(_vm._s(_vm.password_help_text))]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.confirm_password,
+                expression: "confirm_password"
+              }
+            ],
+            staticClass: "input input-confirm-password",
+            attrs: { type: "password", placeholder: "Confirm password" },
+            domProps: { value: _vm.confirm_password },
+            on: {
+              input: [
+                function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.confirm_password = $event.target.value
+                },
+                _vm.check_all
+              ]
+            }
+          }),
+          _vm._v(" "),
+          _c("img", {
+            staticClass: "check confirm_password-check",
+            attrs: {
+              src: _vm.confirm_password_ok
+                ? "../images/forms/ok_circle.png"
+                : "../images/forms/error_circle.png",
+              alt: ""
+            },
+            on: {
+              mouseover: _vm.confirm_password_show_help,
+              mouseleave: _vm.confirm_password_hide_help
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "help help-confirm-password",
+              class: { active: _vm.help_confirm_password },
+              style: {
+                "--x": _vm.confirm_password_help_x,
+                "--y": _vm.confirm_password_help_y
+              }
+            },
+            [_vm._v(_vm._s(_vm.confirm_password_help_text))]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.email,
+                expression: "email"
+              }
+            ],
+            staticClass: "input input-email",
+            attrs: { type: "email", placeholder: "Email" },
+            domProps: { value: _vm.email },
+            on: {
+              input: [
+                function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.email = $event.target.value
+                },
+                _vm.check_all
+              ]
+            }
+          }),
+          _vm._v(" "),
+          _c("img", {
+            staticClass: "check email-check",
+            attrs: {
+              src: _vm.email_ok
+                ? "../images/forms/ok_circle.png"
+                : "../images/forms/error_circle.png",
+              alt: ""
+            },
+            on: {
+              mouseover: _vm.email_show_help,
+              mouseleave: _vm.email_hide_help
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "help help-email",
+              class: { active: _vm.help_email },
+              style: { "--x": _vm.email_help_x, "--y": _vm.email_help_y }
+            },
+            [_vm._v(_vm._s(_vm.email_help_text))]
+          )
+        ]),
+        _vm._v(" "),
+        _c("button", { class: { send: true, abled: _vm.all_right } }, [
+          _vm._v("Register")
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-1bfc63",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$1bfc63', $1bfc63);
+          } else {
+            api.reload('$1bfc63', $1bfc63);
           }
         }
 
@@ -12226,6 +12671,8 @@ var _Homepage = _interopRequireDefault(require("../vue-components/Homepage.vue")
 
 var _Login = _interopRequireDefault(require("../vue-components/Login.vue"));
 
+var _Signup = _interopRequireDefault(require("../vue-components/Signup.vue"));
+
 var _Stream = _interopRequireDefault(require("../vue-components/Stream.vue"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -12240,6 +12687,9 @@ var router = new _vueRouter.default({
     path: '/login',
     component: _Login.default
   }, {
+    path: '/registration',
+    component: _Signup.default
+  }, {
     path: '/stream/:stream_id',
     component: _Stream.default,
     props: true
@@ -12251,7 +12701,7 @@ new _vue.default({
   },
   router: router
 }).$mount('#app');
-},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","vue-router":"node_modules/vue-router/dist/vue-router.esm.js","../vue-components/App.vue":"vue-components/App.vue","../vue-components/Homepage.vue":"vue-components/Homepage.vue","../vue-components/Login.vue":"vue-components/Login.vue","../vue-components/Stream.vue":"vue-components/Stream.vue"}],"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","vue-router":"node_modules/vue-router/dist/vue-router.esm.js","../vue-components/App.vue":"vue-components/App.vue","../vue-components/Homepage.vue":"vue-components/Homepage.vue","../vue-components/Login.vue":"vue-components/Login.vue","../vue-components/Signup.vue":"vue-components/Signup.vue","../vue-components/Stream.vue":"vue-components/Stream.vue"}],"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -12279,7 +12729,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37039" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "19460" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
