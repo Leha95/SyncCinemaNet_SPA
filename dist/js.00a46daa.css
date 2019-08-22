@@ -11,6 +11,7 @@ header[data-v-ccbc53] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 800px;
 }
 .main-nav .wrapper .nav-group[data-v-ccbc53] {
   display: flex;
@@ -19,7 +20,13 @@ header[data-v-ccbc53] {
   height: 40px;
   max-width: 215px;
   width: 100%;
-  padding: 0px 10px;
+  margin: 0px 5px;
+}
+.main-nav .wrapper .nav-group.nav_center-items[data-v-ccbc53] {
+  justify-content: center;
+}
+.main-nav .wrapper .nav-group.nav_center-items .item[data-v-ccbc53] {
+  margin: 0px 7.5px;
 }
 @media screen and (max-width: 600px) {
 .main-nav .wrapper .nav-group.nav_center-items[data-v-ccbc53] {
@@ -29,12 +36,15 @@ header[data-v-ccbc53] {
 .main-nav .wrapper .nav-group .item[data-v-ccbc53] {
   height: 30px;
 }
+.main-nav .wrapper .nav-group.account[data-v-ccbc53] {
+  justify-content: flex-end;
+}
 .main-nav .wrapper .nav-group .signup[data-v-ccbc53] {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  width: 100px;
+  width: 85px;
   height: 30px;
   background: linear-gradient(140.59deg, #7d10a8 17.65%, #eb637b 63.47%), #eb637b;
   border-radius: 100px;
@@ -44,11 +54,11 @@ header[data-v-ccbc53] {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 85px;
   height: 30px;
   border-radius: 100px;
   background: linear-gradient(140.59deg, #7d10a8 17.65%, #eb637b 63.47%), #eb637b;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .main-nav .wrapper .nav-group .login div[data-v-ccbc53] {
   position: absolute;
@@ -88,7 +98,7 @@ header[data-v-ccbc53] {
   text-decoration: none;
 }
 .wrapper {
-  max-width: 1000px;
+  max-width: 800px;
   width: 100%;
   margin: 0px auto;
   padding: 0px 10px;

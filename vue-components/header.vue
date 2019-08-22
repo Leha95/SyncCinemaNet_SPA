@@ -42,6 +42,7 @@ header
         display flex;
         justify-content space-between;
         align-items center;
+        max-width 800px
 
         .nav-group
             display flex;
@@ -51,10 +52,14 @@ header
             height $nav-height;
             max-width 215px;
             width 100%;
-            padding 0px 10px
+            // padding 0px 10px
+            margin 0px 5px
 
 
             &.nav_center-items
+                justify-content center
+                .item
+                    margin 0px 7.5px
                 @media screen and (max-width:600px) {
                     display : none 
                 }
@@ -62,14 +67,15 @@ header
             .item
                 height 30px;
             
-
+            &.account
+                justify-content flex-end
 
             .signup
                 display flex
                 align-items center
                 justify-content center
                 color white;
-                width 100px;
+                width 85px;
                 height 30px;
                 background: linear-gradient(140.59deg, #7D10A8 17.65%, #EB637B 63.47%), #EB637B;
                 border-radius: 100px;
@@ -79,12 +85,12 @@ header
                 display flex
                 justify-content center
                 align-items center
-                width 100px;
+                width 85px;
                 height 30px;
                 border-radius: 100px;
                 background: linear-gradient(140.59deg, #7D10A8 17.65%, #EB637B 63.47%), #EB637B;
 
-                margin-right 15px
+                margin-right 10px
                 div
                     position absolute
                     display flex

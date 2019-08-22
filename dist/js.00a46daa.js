@@ -11188,7 +11188,7 @@ if (inBrowser && window.Vue) {
 
 var _default = VueRouter;
 exports.default = _default;
-},{}],"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{}],"C:/Users/agume/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -11220,7 +11220,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"C:/Users/agume/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -11255,7 +11255,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/vue-hot-reload-api/dist/index.js":[function(require,module,exports) {
+},{"./bundle-url":"C:/Users/agume/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/vue-hot-reload-api/dist/index.js":[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = Object.create(null)
@@ -11662,7 +11662,7 @@ render._withStripped = true
       
       }
     })();
-},{"./..\\images\\logo.png":[["logo.6023b87e.png","images/logo.png"],"images/logo.png"],"./..\\images\\nav_fire.png":[["nav_fire.1cea4a9e.png","images/nav_fire.png"],"images/nav_fire.png"],"./..\\images\\nav_lock.png":[["nav_lock.33846c4f.png","images/nav_lock.png"],"images/nav_lock.png"],"./..\\images\\nav_camera.png":[["nav_camera.43904bc2.png","images/nav_camera.png"],"images/nav_camera.png"],"_css_loader":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/App.vue":[function(require,module,exports) {
+},{"./..\\images\\logo.png":[["logo.6023b87e.png","images/logo.png"],"images/logo.png"],"./..\\images\\nav_fire.png":[["nav_fire.1cea4a9e.png","images/nav_fire.png"],"images/nav_fire.png"],"./..\\images\\nav_lock.png":[["nav_lock.33846c4f.png","images/nav_lock.png"],"images/nav_lock.png"],"./..\\images\\nav_camera.png":[["nav_camera.43904bc2.png","images/nav_camera.png"],"images/nav_camera.png"],"_css_loader":"C:/Users/agume/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/App.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11748,7 +11748,7 @@ render._withStripped = true
       
       }
     })();
-},{"./header":"vue-components/header.vue","./..\\fonts\\Quicksand-Medium.ttf":[["Quicksand-Medium.45f07396.ttf","fonts/Quicksand-Medium.ttf"],"fonts/Quicksand-Medium.ttf"],"_css_loader":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/Homepage.vue":[function(require,module,exports) {
+},{"./header":"vue-components/header.vue","./..\\fonts\\Quicksand-Medium.ttf":[["Quicksand-Medium.45f07396.ttf","fonts/Quicksand-Medium.ttf"],"fonts/Quicksand-Medium.ttf"],"_css_loader":"C:/Users/agume/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/Homepage.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12096,7 +12096,7 @@ render._withStripped = true
       
       }
     })();
-},{"./..\\images\\forms\\bg.png":[["bg.4639557a.png","images/forms/bg.png"],"images/forms/bg.png"],"./..\\images\\forms\\nickname.png":[["nickname.73398389.png","images/forms/nickname.png"],"images/forms/nickname.png"],"./..\\images\\forms\\name.png":[["name.45d321e4.png","images/forms/name.png"],"images/forms/name.png"],"./..\\images\\forms\\password.png":[["password.eff0a20c.png","images/forms/password.png"],"images/forms/password.png"],"./..\\images\\forms\\email.png":[["email.318cd9ff.png","images/forms/email.png"],"images/forms/email.png"],"_css_loader":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/Signup.vue":[function(require,module,exports) {
+},{"./..\\images\\forms\\bg.png":[["bg.4639557a.png","images/forms/bg.png"],"images/forms/bg.png"],"./..\\images\\forms\\nickname.png":[["nickname.73398389.png","images/forms/nickname.png"],"images/forms/nickname.png"],"./..\\images\\forms\\name.png":[["name.45d321e4.png","images/forms/name.png"],"images/forms/name.png"],"./..\\images\\forms\\password.png":[["password.eff0a20c.png","images/forms/password.png"],"images/forms/password.png"],"./..\\images\\forms\\email.png":[["email.318cd9ff.png","images/forms/email.png"],"images/forms/email.png"],"_css_loader":"C:/Users/agume/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/Signup.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12541,7 +12541,7 @@ render._withStripped = true
       
       }
     })();
-},{"./..\\images\\forms\\bg.png":[["bg.4639557a.png","images/forms/bg.png"],"images/forms/bg.png"],"./..\\images\\forms\\nickname.png":[["nickname.73398389.png","images/forms/nickname.png"],"images/forms/nickname.png"],"./..\\images\\forms\\name.png":[["name.45d321e4.png","images/forms/name.png"],"images/forms/name.png"],"./..\\images\\forms\\password.png":[["password.eff0a20c.png","images/forms/password.png"],"images/forms/password.png"],"./..\\images\\forms\\email.png":[["email.318cd9ff.png","images/forms/email.png"],"images/forms/email.png"],"_css_loader":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/Stream.vue":[function(require,module,exports) {
+},{"./..\\images\\forms\\bg.png":[["bg.4639557a.png","images/forms/bg.png"],"images/forms/bg.png"],"./..\\images\\forms\\nickname.png":[["nickname.73398389.png","images/forms/nickname.png"],"images/forms/nickname.png"],"./..\\images\\forms\\name.png":[["name.45d321e4.png","images/forms/name.png"],"images/forms/name.png"],"./..\\images\\forms\\password.png":[["password.eff0a20c.png","images/forms/password.png"],"images/forms/password.png"],"./..\\images\\forms\\email.png":[["email.318cd9ff.png","images/forms/email.png"],"images/forms/email.png"],"_css_loader":"C:/Users/agume/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"vue-components/Stream.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12658,7 +12658,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"js/index.js":[function(require,module,exports) {
+},{"_css_loader":"C:/Users/agume/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -12701,7 +12701,7 @@ new _vue.default({
   },
   router: router
 }).$mount('#app');
-},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","vue-router":"node_modules/vue-router/dist/vue-router.esm.js","../vue-components/App.vue":"vue-components/App.vue","../vue-components/Homepage.vue":"vue-components/Homepage.vue","../vue-components/Login.vue":"vue-components/Login.vue","../vue-components/Signup.vue":"vue-components/Signup.vue","../vue-components/Stream.vue":"vue-components/Stream.vue"}],"C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","vue-router":"node_modules/vue-router/dist/vue-router.esm.js","../vue-components/App.vue":"vue-components/App.vue","../vue-components/Homepage.vue":"vue-components/Homepage.vue","../vue-components/Login.vue":"vue-components/Login.vue","../vue-components/Signup.vue":"vue-components/Signup.vue","../vue-components/Stream.vue":"vue-components/Stream.vue"}],"C:/Users/agume/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -12729,7 +12729,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "19460" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53750" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -12904,5 +12904,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/Admin/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/index.js"], null)
+},{}]},{},["C:/Users/agume/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/index.js"], null)
 //# sourceMappingURL=/js.00a46daa.js.map
